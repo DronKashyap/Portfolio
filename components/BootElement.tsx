@@ -64,7 +64,7 @@ const BootElement = () => {
       }}
       initial="initial"
       exit="exit"
-      className="h-[100vh] w-[100vw] flex items-center justify-center fixed z-[99] bg-[#000000]"
+      className="h-[100vh] w-[100vw] flex items-center justify-center fixed z-[99] bg-gradient-to-b from-white via-white to-[#D8E3EB]"
     >
       {dimension.width > 0 && (
         <>
@@ -89,7 +89,7 @@ const BootElement = () => {
               variants={curve}
               initial="initial"
               exit="exit"
-              fill="#000000"
+              fill="#FFFFFF"
             ></motion.path>
           </svg>
         </>

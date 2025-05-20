@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <> 
     <BootScreen />
-    <main className="bg-black"> 
+    <main className="bg-white"> 
     <Landing />
     </main>
     </>
