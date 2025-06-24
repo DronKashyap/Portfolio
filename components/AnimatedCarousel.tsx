@@ -6,9 +6,6 @@ import Image from 'next/image';
 import img1a from '@/public/img1a.png';
 import img1b from '@/public/img1b.png';
 import img1c from '@/public/img1c.png';
-import img2a from '@/public/img2a.png';
-import img2b from '@/public/img2b.png';
-import img2c from '@/public/img2c.png';
 import img3a from '@/public/img3a.png';
 import img3b from '@/public/img3b.png';
 import img3c from '@/public/img3c.png';
@@ -21,7 +18,7 @@ import img5c from '@/public/img5c.png';
 
 const IMAGE_SETS = [
   [img1a, img1b, img1c],
-  [img2a, img2b, img2c],
+
   [img3a, img3b, img3c],
   [img4a, img4b, img4c],
   [img5a, img5b, img5c],
