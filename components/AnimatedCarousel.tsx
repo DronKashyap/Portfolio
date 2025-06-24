@@ -15,12 +15,16 @@ import img3c from '@/public/img3c.png';
 import img4a from '@/public/img4a.png';
 import img4b from '@/public/img4b.png';
 import img4c from '@/public/img4c.png';
+import img5a from '@/public/img5a.png';
+import img5b from '@/public/img5b.png';
+import img5c from '@/public/img5c.png';
 
 const IMAGE_SETS = [
   [img1a, img1b, img1c],
   [img2a, img2b, img2c],
   [img3a, img3b, img3c],
   [img4a, img4b, img4c],
+  [img5a, img5b, img5c],
 ];
 
 const AnimatedCarousel = () => {
