@@ -29,7 +29,7 @@ async function Footer({ footerWidth = 'max-w-5xl' }: { footerWidth?: string }) {
         ©<p>Dron Kashyap</p>
         <a
           className="link ml-auto inline-flex items-center gap-1.5"
-          href="https://github.com/Rohit-Singh-Rawat/Space"
+          href="https://github.com/DronKashyap/Portfolio"
           rel="noreferrer"
           target="_blank"
         >

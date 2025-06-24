@@ -3,12 +3,24 @@
 import { useEffect, useRef, useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import Image from 'next/image';
+import img1a from '@/public/img1a.png';
+import img1b from '@/public/img1b.png';
+import img1c from '@/public/img1c.png';
+import img2a from '@/public/img2a.png';
+import img2b from '@/public/img2b.png';
+import img2c from '@/public/img2c.png';
+import img3a from '@/public/img3a.png';
+import img3b from '@/public/img3b.png';
+import img3c from '@/public/img3c.png';
+import img4a from '@/public/img4a.png';
+import img4b from '@/public/img4b.png';
+import img4c from '@/public/img4c.png';
 
 const IMAGE_SETS = [
-  ['/img1a.png', '/img1b.png', '/img1c.png'],
-  ['/img2a.png', '/img2b.png', '/img2c.png'],
-  ['/img3a.png', '/img3b.png', '/img3c.png'],
-  ['/img4a.png', '/img4b.png', '/img4c.png'],
+  [img1a, img1b, img1c],
+  [img2a, img2b, img2c],
+  [img3a, img3b, img3c],
+  [img4a, img4b, img4c],
 ];
 
 const AnimatedCarousel = () => {
@@ -30,6 +42,12 @@ const AnimatedCarousel = () => {
   useEffect(() => {
     if (!isHovered) startScroll();
     else controls.stop();
+
+    // Optional: Log image dimensions
+    const allImages = IMAGE_SETS.flat();
+    allImages.forEach((img, index) => {
+      console.log(`Image ${index + 1}: ${img.src}, Width: ${img.width}, Height: ${img.height}`);
+    });
   }, [isHovered]);
 
   const [currentImageIndexes, setCurrentImageIndexes] = useState(
@@ -52,33 +70,35 @@ const AnimatedCarousel = () => {
 
   return (
     <div
-      className="overflow-hidden  mt-12 w-auto  h-auto mx-auto relative"
+      className="relative overflow-hidden w-full py-2"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-    
       <motion.div
         animate={controls}
         className="flex w-[200%] space-x-6"
       >
         {[...IMAGE_SETS, ...IMAGE_SETS].map((set, idx) => {
           const cardIdx = idx % IMAGE_SETS.length;
+          const currentImage = set[currentImageIndexes[cardIdx]];
           return (
             <div
-              key={idx}
-              className="min-w-auto h-auto bg-white shadow-lg rounded-xl flex items-center justify-center overflow-hidden"
-              onMouseEnter={() => startImageLoops(cardIdx)}
-              onMouseLeave={() => stopImageLoops(cardIdx)}
-            >
-              <Image
-                src={set[currentImageIndexes[cardIdx]]}
-                alt="carousel-img"
-                width={300}
-                height={400}
-                quality={100} 
-                className="object-fit w-auto h-auto transition-all duration-300"
-              />
-            </div>
+                key={idx}
+                className="relative flex items-center justify-center min-w-[1000px] h-[600px] shrink-0 overflow-hidden"
+                onMouseEnter={() => startImageLoops(cardIdx)}
+                onMouseLeave={() => stopImageLoops(cardIdx)}
+              >
+                <Image
+                  src={currentImage}
+                  alt="carousel-img"
+                  width={1000}
+                  height={600}
+                  className="z-0 border-4  rounded-xl"
+                />
+                {/* Gradient overlay */}
+                <div className="absolute inset-0 z-10 pointer-events-none bg-gradient-to-t from-white via-transparent to-transparent" />
+              </div>
+
           );
         })}
       </motion.div>

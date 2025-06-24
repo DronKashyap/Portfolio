@@ -27,8 +27,17 @@ import { VsCode } from '@/components/Icons/StackIcons/VS'
 import { Webpack } from '@/components/Icons/StackIcons/webpack'
 import { WebSocket } from '@/components/Icons/StackIcons/Websocket'
 import { Cloudflare } from '@/components/Icons/StackIcons/Cloudflare'
+import { Firebase } from '../Icons/StackIcons/Firebase'
 import React from 'react'
 import { NodejsIcon } from '@/components/Icons/StackIcons/nodejsIcon'
+import { Gsap } from '../Icons/StackIcons/Gsap'
+import { Python } from '../Icons/StackIcons/Python'
+import { Aws } from '../Icons/StackIcons/AWS'
+import { Kubernetes } from '../Icons/StackIcons/kubernetes'
+import { Prometheus } from '../Icons/StackIcons/Prometheus'
+import { Grafana } from '../Icons/StackIcons/Grafana'
+import { Kafka } from '../Icons/StackIcons/Kafka'
+import { Mongoose } from '../Icons/StackIcons/Mongoose'
 import Stack from '@/components/Icons/Stack'
 import BentoCard from './BentoCard'
 import Vite from '@/components/Icons/StackIcons/vite'
@@ -48,6 +57,8 @@ const frontendTech: React.FC<React.SVGProps<SVGSVGElement>>[] = [
   Shadcn,
   Vite,
   Webpack,
+  Firebase,
+  Gsap
 ]
 
 const backendAndTools: React.FC<React.SVGProps<SVGSVGElement>>[] = [
@@ -55,6 +66,13 @@ const backendAndTools: React.FC<React.SVGProps<SVGSVGElement>>[] = [
   Express,
   Docker,
   Prisma,
+  Python,
+  Aws,
+  Kafka,
+  Kubernetes,
+  Prometheus, 
+  Grafana,
+  Mongoose,
   Postgresql,
   Mongodb,
   Redis,
@@ -66,7 +84,6 @@ const backendAndTools: React.FC<React.SVGProps<SVGSVGElement>>[] = [
   GithubActions,
   WebSocket,
   Cloudflare,
-  Java,
 ]
 
 const StacksCard = ({ isForSmall = false }: { isForSmall?: boolean }) => {
@@ -92,7 +109,7 @@ const StacksCard = ({ isForSmall = false }: { isForSmall?: boolean }) => {
           <TechComponent
             key={index}
             id={isForSmall ? `s2-${index}` : `${index}2`}
-            className="size-10 grayscale transition-all duration-500 ease-in-out hover:grayscale-0 dark:invert dark:hover:invert-0"
+            className="size-10  grayscale transition-all duration-500 ease-in-out hover:grayscale-0 dark:invert dark:hover:invert-0"
           />
         ))}
       </Marquee>

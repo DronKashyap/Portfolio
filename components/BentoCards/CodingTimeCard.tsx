@@ -33,8 +33,9 @@ async function CodingTimeCard() {
           </span>
         </div>
         <div className="text-center font-lombok font-medium text-emerald-400">
-          coding 
+          Coding <span className="block text-center text-xs">(Wakatime)</span>
         </div>{' '}
+      
         <Terminal className="absolute bottom-0 left-0 -z-50 size-16 -translate-x-2 translate-y-4 blur-sm transition-all delay-100 duration-500 ease-in group-hover:blur-0 dark:brightness-50 dark:invert-[20%]" />
       </div>
     </BentoCard>

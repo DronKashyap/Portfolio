@@ -5,9 +5,9 @@ import { Metadata } from "next";
 import About from "@/components/About";
 
 export const metadata: Metadata = {
-  title: "About | John Doe",
+  title: "About | Dron Kashyap",
   description:
-    "John Doe is a developer, writer and speaker. He is a digital nomad and travels around the world while working remotely.",
+    "Dron Kashyap is a Full Stack Developer, Problem Solver, and Founder of Penguin Labs. He builds apps, chases bugs, and sometimes footballs with Brownie FC.",
 };
 
 export default function AboutPage() {

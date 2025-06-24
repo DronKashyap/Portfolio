@@ -65,6 +65,7 @@ const BootElement = () => {
       initial="initial"
       exit="exit"
       className="h-[100vh] w-[100vw] flex items-center justify-center fixed z-[99] bg-gradient-to-b from-white via-white to-[#D8E3EB]"
+      // className="h-[100vh] w-[100vw] flex items-center justify-center fixed z-[99] bg-white"
     >
       {dimension.width > 0 && (
         <>
@@ -80,8 +81,8 @@ const BootElement = () => {
             }}
             initial="initial"
             animate="enter"
-            className="flex bg-gradient-to-br from-[#D8E3EB] to-[#4b4b4b] bg-clip-text text-transparent font-poppins font-medium text-[42px] items-center absolute z-[1]"
-          >
+            // className="flex bg-gradient-to-br from-[#D8E3EB] to-[#4b4b4b] bg-clip-text text-transparent font-poppins font-medium text-[42px] items-center absolute z-[1]"
+          className="flex bg-gradient-to-br from-slate-400 to-black bg-clip-text text-transparent font-poppins font-medium text-[42px] items-center absolute z-[1]">
             {bootWords[index]}
           </motion.p>
           <svg className="absolute top-0 w-[100%] h-[calc(100% + 200px)]">

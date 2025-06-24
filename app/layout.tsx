@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Inter, Newsreader} from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 // Local fonts
 const geistSans = localFont({
@@ -44,7 +46,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${newsreader.variable} antialiased bg-white`}
       >
+      <Navbar />
         {children}
+      <Footer />
       </body>
     </html>
   );

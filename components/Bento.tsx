@@ -11,9 +11,6 @@ const Bento = () => {
   return (
     <div className=" space-y-10">
       <div className="group/bentoi flex w-fit items-baseline gap-2">
-        {/* <p className="font-neu underline underline-offset-2">Bento</p>
-        <BentoIcon className="w-5" />
-        <Chopstiks className="w-5 -translate-x-5 -translate-y-1" /> */}
       </div>
       <div className="hidden grid-cols-5 grid-rows-6 gap-4 xs:grid">
         <AnimeCard />

@@ -7,7 +7,7 @@ import { cn } from '@/lib/utils'
 const GithubCard = () => {
   return (
     <BentoCard className="group/github col-span-3 row-span-2 xs:col-span-2 xs:row-span-4">
-      <Link href={'https://github.com/Rohit-Singh-Rawat'} target="_blank">
+      <Link href={'https://github.com/DronKashyap'} target="_blank">
         <div className="m-3 flex items-center gap-2">
           {' '}
           <Github className="size-4" />
@@ -18,7 +18,7 @@ const GithubCard = () => {
         <div className="flex w-full flex-col items-center justify-center">
           {' '}
           <div className="custom__scrollbar h-32 max-h-32 w-36 max-w-36 overflow-hidden">
-            <GithubCalendar username={'Rohit-Singh-Rawat'} />
+            <GithubCalendar username={'DronKashyap'} />
           </div>
           <GithubStats />
         </div>{' '}
@@ -29,8 +29,8 @@ const GithubCard = () => {
 
 const GithubStats = async () => {
   const { followers, following, totalStars, totalIssues, totalPRs } = {
-    followers: 20,
-    following: 30,
+    followers: 2,
+    following: 24,
     totalStars: 5,
     totalIssues: 50,
     totalPRs: 10,

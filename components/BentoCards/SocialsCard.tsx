@@ -21,7 +21,7 @@ const socials = [
   {
     name: 'LinkedIn',
     icon: Linkedin,
-    link: 'https://www.linkedin.com/in/rohit-singh-rawat-8b4170256/',
+    link: 'https://www.linkedin.com/in/dron-kashyap/',
     translateX: '12px',
     rotate: '-10deg',
     zIndex: 1,
@@ -29,7 +29,7 @@ const socials = [
   {
     name: 'Twitter',
     icon: Twitter,
-    link: 'https://x.com/Spacing_Whale',
+    link: 'https://x.com/DronKashyap17',
     translateX: '4px',
     rotate: '-3deg',
     zIndex: 3,
@@ -37,7 +37,7 @@ const socials = [
   {
     name: 'PeerList',
     icon: PeerList,
-    link: 'https://peerlist.io/spacingwhale ',
+    link: 'https://peerlist.io/dronkashyap ',
     translateX: '-4px',
     rotate: '3deg',
     zIndex: 2,
@@ -45,7 +45,7 @@ const socials = [
   {
     name: 'Spotify',
     icon: Spotify,
-    link: 'https://open.spotify.com/user/31r6yaikufv7hnskfosgxywj64yu',
+    link: 'https://open.spotify.com/',
     translateX: '-12px',
     rotate: '10deg',
     zIndex: 1,
@@ -53,7 +53,7 @@ const socials = [
   {
     name: 'YouTube',
     icon: YT,
-    link: 'https://www.youtube.com/@rohitsinghrawat6391',
+    link: 'https://www.youtube.com/@BrownieFC2025',
     translateX: '-24px',
     rotate: '20deg',
     zIndex: 0,
